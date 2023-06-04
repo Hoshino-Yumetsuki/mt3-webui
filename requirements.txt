@@ -1,4 +1,5 @@
-
+nest-asyncio
+pyfluidsynth
 absl-py 
 ddsp 
 flax 

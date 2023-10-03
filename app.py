@@ -41,8 +41,7 @@ import tensorflow.compat.v2 as tf
 import functools
 import gin
 import jax
-import jax.linear_util
-jax.extend.linear_util = jax.linear_util
+
 import librosa
 import note_seq
 

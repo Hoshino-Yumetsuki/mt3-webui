@@ -11,8 +11,6 @@ os.system("mv t5x t5x_tmp; mv t5x_tmp/* .; rm -r t5x_tmp")
 os.system("sed -i 's:jax\[tpu\]:jax:' setup.py")
 os.system("python3 -m pip install -e .")
 os.system("python3 -m pip install --upgrade pip")
-os.system("python3 -m pip install nest-asyncio numba==0.56.4 llvmlite==0.39.1 pyfluidsynth==1.3.0 -e .")
-os.system("python3 -m pip install --no-dependencies --upgrade ddsp ")
 
 
 
@@ -43,6 +41,8 @@ import tensorflow.compat.v2 as tf
 import functools
 import gin
 import jax
+import jax.linear_util
+jax.extend.linear_util = jax.linear_util
 import librosa
 import note_seq
 

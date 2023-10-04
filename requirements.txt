@@ -1,5 +1,5 @@
 absl-py
-flax 
+flax@git+https://github.com/google-research/t5x#egg=flax
 gin-config
 immutabledict
 librosa
@@ -9,9 +9,9 @@ numpy
 pretty_midi
 scikit-learn
 scipy
-seqio
+seqio@git+https://github.com/google-research/t5x#egg=seqio
 t5
-t5x @ git+https://github.com/google-research/t5x#egg=t5x
+t5x@git+https://github.com/google-research/t5x#egg=t5x
 tensorflow_cpu
 tensorflow-datasets 
 

@@ -11,7 +11,7 @@ scikit-learn
 scipy
 seqio
 t5
-
+t5x @ git+https://github.com/google-research/t5x#egg=t5x
 tensorflow_cpu
 tensorflow-datasets 
 

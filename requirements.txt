@@ -12,7 +12,7 @@ numpy
 pretty_midi 
 scikit-learn 
 scipy 
-seqio 
+seqio == 0.0.14
 t5 
 tensorflow_cpu
 tensorflow-datasets 

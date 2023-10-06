@@ -12,7 +12,7 @@ numpy
 pretty_midi 
 scikit-learn 
 scipy 
-seqio 
+
 t5 
 tensorflow_cpu
 tensorflow-datasets 

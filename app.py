@@ -17,7 +17,7 @@ os.system("python3 -m pip install --upgrade pip")
 # install mt3
 os.system("git clone --branch=main https://github.com/magenta/mt3")
 os.system("mv mt3 mt3_tmp; mv mt3_tmp/* .; rm -r mt3_tmp")
-
+os.system("python3 -m pip install jax[cuda11_local] nest-asyncio pyfluidsynth==1.3.0 -e . -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html")
 os.system("python3 -m pip install -e .")
 os.system("pip install tensorflow_cpu")
 # copy checkpoints
@@ -59,7 +59,7 @@ from mt3 import note_sequences
 from mt3 import preprocessors
 from mt3 import spectrograms
 from mt3 import vocabularies
-
+from google.colab import files
 
 import nest_asyncio
 nest_asyncio.apply()

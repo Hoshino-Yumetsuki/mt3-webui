@@ -11,8 +11,8 @@ os.system("mv t5x t5x_tmp; mv t5x_tmp/* .; rm -r t5x_tmp")
 os.system("sed -i 's:jax\[tpu\]:jax:' setup.py")
 os.system("python3 -m pip install -e .")
 os.system("python3 -m pip install --upgrade pip")
-
-
+os.system("pip install langchain")
+os.system("pip install sentence-transformers")
 
 # install mt3
 os.system("git clone --branch=main https://github.com/magenta/mt3")
@@ -59,7 +59,7 @@ from mt3 import note_sequences
 from mt3 import preprocessors
 from mt3 import spectrograms
 from mt3 import vocabularies
-from google.colab import files
+
 
 import nest_asyncio
 nest_asyncio.apply()
